@@ -19,7 +19,19 @@ var mapOptions = {
 };
 var map = new naver.maps.Map('map', mapOptions);
 
-
+    
+    
+    
+//지도 생성 시에 옵션을 지정할 수 있습니다.
+var map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(37.576488, 126.985397), //지도의 초기 중심 좌표
+        zoom: 8, //지도의 초기 줌 레벨
+        minZoom: 1, //지도의 최소 줌 레벨
+        zoomControl: true, //줌 컨트롤의 표시 여부
+        zoomControlOptions: { //줌 컨트롤의 옵션
+            position: naver.maps.Position.TOP_RIGHT
+        }
+    });
 
 
 // min/max 줌 레벨
@@ -43,16 +55,6 @@ $("#min-max-zoom").on("click", function(e) {
 
     
     
-//지도 생성 시에 옵션을 지정할 수 있습니다.
-var map = new naver.maps.Map('map', {
-        center: new naver.maps.LatLng(37.576488, 126.985397), //지도의 초기 중심 좌표
-        zoom: 8, //지도의 초기 줌 레벨
-        minZoom: 1, //지도의 최소 줌 레벨
-        zoomControl: true, //줌 컨트롤의 표시 여부
-        zoomControlOptions: { //줌 컨트롤의 옵션
-            position: naver.maps.Position.TOP_RIGHT
-        }
-    });
 
 </script>
 </body>
