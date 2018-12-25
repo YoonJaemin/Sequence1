@@ -32,6 +32,48 @@ var marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.579591, 126.980335),
     map: map
 });
+//오버레이 국립현대미술관
+var HOME_PATH = window.HOME_PATH || '.';
+var MMCA = new naver.maps.LatLng(37.579591, 126.980335),
+    map = new naver.maps.Map('map', {
+        center: MMCA,
+        zoom: 10
+    }),
+    marker = new naver.maps.Marker({
+        map: map,
+        position: MMCA
+    });
+
+var contentString = [
+        '<div class="iw_inner">',
+        '   <h3>국립현대미술관 서울관</h3>',
+        '   <p>서울 종로구 삼청로 30 | 서울특별시 종로구 소격동 165<br />',
+        '       <img src="left and right combination.png" width="120" height="50" alt="MMCA" class="thumb" /><br />',
+        '       02-120 | 미술관<br />',
+        '       <a href="http://www.mmca.go.kr" target="_blank">http://www.mmca.go.kr/</a>',
+        '   </p>',
+        '</div>'
+    ].join('');
+
+var infowindow = new naver.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 250,
+    backgroundColor: "#eee",
+    borderColor: "#2db400",
+    borderWidth: 5,
+    anchorSize: new naver.maps.Size(30, 30),
+    anchorSkew: true,
+    anchorColor: "#eee",
+    pixelOffset: new naver.maps.Point(20, -20)
+});
+
+naver.maps.Event.addListener(marker, "click", function(e) {
+    if (infowindow.getMap()) {
+        infowindow.close();
+    } else {
+        infowindow.open(map, marker);
+    }
+});
 </script>
 </body>
         </P>
