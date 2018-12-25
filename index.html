@@ -32,7 +32,16 @@ var map = new naver.maps.Map('map', {
         }
     });
 
+
     
+    
+    
+ //국현 서울관 마커
+    var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.579489, 126.980324),
+    map: map
+});
+       
     
     
 
@@ -57,12 +66,7 @@ $("#min-max-zoom").on("click", function(e) {
 
     
    
-//국현 서울관 마커
-    var marker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.579489, 126.980324),
-    map: map
-});
-    
+
     
 
 </script>
