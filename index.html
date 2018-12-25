@@ -16,8 +16,12 @@
 var mapOptions = {
     center: new naver.maps.LatLng(37.576488, 126.985397),
     zoom: 11
-};
-
+};    
+var map = new naver.maps.Map('map', mapOptions);
+    
+    
+    
+    
 // min/max 줌 레벨
 $("#min-max-zoom").on("click", function(e) {
     e.preventDefault();
@@ -38,18 +42,6 @@ $("#min-max-zoom").on("click", function(e) {
 });
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-var map = new naver.maps.Map('map', mapOptions);
 </script>
 </body>
 </html>
