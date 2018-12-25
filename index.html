@@ -27,6 +27,11 @@ var map = new naver.maps.Map('map', {
 
 //setOptions 메서드를 이용해 옵션을 조정할 수도 있습니다.
 map.setOptions("mapTypeControl", true); //지도 유형 컨트롤의 표시 여부
+//국립현대미술관 마커
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.579591, 126.980335),
+    map: map
+});
 </script>
 </body>
         </P>
