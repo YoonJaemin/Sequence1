@@ -18,6 +18,37 @@ var mapOptions = {
     zoom: 11
 };
 
+// min/max 줌 레벨
+$("#min-max-zoom").on("click", function(e) {
+    e.preventDefault();
+
+    if (map.getOptions("minZoom") === 10) {
+        map.setOptions({
+            minZoom: 1,
+            maxZoom: 14
+        });
+        $(this).val(this.name + ': 1 ~ 14');
+    } else {
+        map.setOptions({
+            minZoom: 10,
+            maxZoom: 12
+        });
+        $(this).val(this.name + ': 10 ~ 12');
+    }
+});
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 var map = new naver.maps.Map('map', mapOptions);
 </script>
 </body>
