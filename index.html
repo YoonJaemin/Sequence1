@@ -1,78 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Seoul Art Sequence</title>
-    <h2>Seoul Art Sequence</h2>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=amtiz9kf75"></script>
-</head>
-<body>
-<div id="map" style="width:100%;height:800px;"></div>
-
+  <title>신예슬</title>
+  <meta charset="utf-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131297308-1"></script>
 <script>
-var mapOptions = {
-    center: new naver.maps.LatLng(37.576488, 126.985397),
-    zoom: 11
-};
-var map = new naver.maps.Map('map', mapOptions);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    
-    
-    
-var map = new naver.maps.Map('map', {
-        center: new naver.maps.LatLng(37.576488, 126.985397), //지도의 초기 중심 좌표
-        zoom: 11, //지도의 초기 줌 레벨
-        minZoom: 1, //지도의 최소 줌 레벨
-        zoomControl: true, //줌 컨트롤의 표시 여부
-        zoomControlOptions: { //줌 컨트롤의 옵션
-            position: naver.maps.Position.TOP_RIGHT
-        }
-    });
-
-
-    
-    
-    
- //국현 서울관 마커
-    var marker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.579489, 126.980324),
-    map: map
-});
-       
-    
-    
-
-// min/max 줌 레벨
-$("#min-max-zoom").on("click", function(e) {
-    e.preventDefault();
-
-    if (map.getOptions("minZoom") === 10) {
-        map.setOptions({
-            minZoom: 1,
-            maxZoom: 14
-        });
-        $(this).val(this.name + ': 1 ~ 14');
-    } else {
-        map.setOptions({
-            minZoom: 10,
-            maxZoom: 12
-        });
-        $(this).val(this.name + ': 10 ~ 12');
-    }
-});
-
-    
-   
-
-    
-
+  gtag('config', 'UA-131297308-1');
 </script>
-</body>
-</html>
+</head>
 
+<boby>
+    <h1><a href="index.html">연인</a></h1>
+<ol>
+  <li><a href="1.html">신예슬</a></li>
+  <li><a href="2.html">윤재민</a></li>
+</ol>
+<ul>
+  <li>역촌</li>
+  <li>범계</li>
+  <li>뉴욕</li>
+</ul>
 
+<h2>일기</h2>
+<h1><strong><u>신예슬 윤재민</u></strong> <u>보고싶다</u></h1>
+<style>
+  body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+  }
+  a {
+    color: #1da1f2;
+  }
+  svg {
+    color: #1da1f2;
+    display: block;
+    fill: currentcolor;
+    height: 21px;
+    margin: 13px auto;
+    width: 24px;
+  }
+  </style>
+이것은 예슬이 페이지 입니다. 예슬이는 현대음악을 전문으로 하는 음악비평가 입니다.
 
-
+</boby>
